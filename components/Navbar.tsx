@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
             <Link to="/" className="flex items-center space-x-4 group">
               <div className="w-16 h-16 p-0.5 bg-white rounded-full shadow-md border border-yellow-50 overflow-hidden ring-4 ring-transparent group-hover:ring-yellow-100 transition-all duration-500">
                 <img 
-                  src="logo-1.png" 
+                  src="/images/logo-1.png" 
                   alt="Shama Vidya Shalaa Logo" 
                   className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-700"
                 />

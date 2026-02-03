@@ -34,7 +34,7 @@ const Home: React.FC = () => {
               <div className="relative z-10 animate-float">
                 <div className="rounded-[5rem] overflow-hidden border-[12px] border-white shadow-2xl transition-transform duration-700 group-hover:scale-[1.02]">
                   <img 
-                    src="building-1.avif" 
+                    src="/images/building-1.avif" 
                     alt="School Entrance" 
                     className="w-full h-full object-cover transition-all duration-700"
                   />
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
               {/* Floating Badge */}
               <div className="absolute -bottom-12 -left-12 z-20 bg-white p-6 rounded-[3rem] shadow-2xl border border-yellow-50 text-center w-52 hover:-rotate-6 transition-transform duration-500">
                 <div className="w-20 h-20 mx-auto mb-3 bg-white rounded-full p-1 shadow-inner border border-stone-50">
-                  <img src="logo-1.png" className="w-full h-full object-contain" alt="SVS Emblem" />
+                  <img src="/images/logo-1.png" className="w-full h-full object-contain" alt="SVS Emblem" />
                 </div>
                 <div className="text-3xl font-serif font-bold text-[#3e3a8f]">1968</div>
                 <div className="text-[10px] font-black text-[#009640] uppercase tracking-widest opacity-80">Legacy of Care</div>
@@ -131,16 +131,16 @@ const Home: React.FC = () => {
             <div className="lg:w-1/2">
               <div className="grid grid-cols-2 gap-6 p-4 bg-yellow-50 rounded-[5rem]">
                 <div className="overflow-hidden rounded-3xl h-48 sm:h-56">
-                  <img src="class-1.jpg" alt="Study" className="w-full h-full object-cover transition-all duration-500 hover:scale-110 hover:brightness-110 cursor-pointer" />
+                  <img src="/images/class-1.jpg" alt="Study" className="w-full h-full object-cover transition-all duration-500 hover:scale-110 hover:brightness-110 cursor-pointer" />
                 </div>
                 <div className="overflow-hidden rounded-3xl h-48 sm:h-56">
-                  <img src="class-2.jpeg" alt="Lab" className="w-full h-full object-cover transition-all duration-500 hover:scale-110 hover:brightness-110 cursor-pointer" />
+                  <img src="/images/class-2.jpeg" alt="Lab" className="w-full h-full object-cover transition-all duration-500 hover:scale-110 hover:brightness-110 cursor-pointer" />
                 </div>
                 <div className="overflow-hidden rounded-3xl h-48 sm:h-56">
-                  <img src="class-3.avif" alt="Students" className="w-full h-full object-cover transition-all duration-500 hover:scale-110 hover:brightness-110 cursor-pointer" />
+                  <img src="/images/class-3.avif" alt="Students" className="w-full h-full object-cover transition-all duration-500 hover:scale-110 hover:brightness-110 cursor-pointer" />
                 </div>
                  <div className="overflow-hidden rounded-3xl h-48 sm:h-56">
-                  <img src="class-4.avif" alt="Students" className="w-full h-full object-cover transition-all duration-500 hover:scale-110 hover:brightness-110 cursor-pointer" />
+                  <img src="/images/class-4.avif" alt="Students" className="w-full h-full object-cover transition-all duration-500 hover:scale-110 hover:brightness-110 cursor-pointer" />
                 </div>
               </div>
             </div>

@@ -65,7 +65,7 @@ const AIChatbot: React.FC = () => {
           <div className="bg-[#3e3a8f] p-4 text-white flex justify-between items-center">
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-white rounded-xl p-1">
-                <img src="logo-1.png" alt="SVS" className="w-full h-full object-contain" />
+                <img src="/images/logo-1.png" alt="SVS" className="w-full h-full object-contain" />
               </div>
               <div>
                 <p className="font-bold text-sm">SVS Assistant</p>

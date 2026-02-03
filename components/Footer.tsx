@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <div className="space-y-8">
             <div className="flex items-center space-x-4">
               <div className="w-16 h-16 bg-white rounded-2xl p-1 shadow-md">
-                <img src="logo-1.png" alt="SVS Logo" className="w-full h-full object-contain" />
+                <img src="/images/logo-1.png" alt="SVS Logo" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="text-xl font-serif font-bold tracking-tight">SHAMA VIDYA Shala</h3>

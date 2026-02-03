@@ -11,7 +11,7 @@ const About: React.FC = () => {
         </div>
         <div className="max-w-4xl mx-auto px-4 relative z-10">
           <div className="w-32 h-32 mx-auto mb-10 bg-white rounded-full p-1 shadow-2xl border border-yellow-50 animate-float">
-            <img src="logo-1.png" className="w-full h-full object-contain" alt="SVS Full Emblem" />
+            <img src="/images/logo-1.png" className="w-full h-full object-contain" alt="SVS Full Emblem" />
           </div>
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-[#3e3a8f] mb-4">Our Legacy of Love</h1>
           <div className="w-24 h-1.5 bg-[#009640] mx-auto rounded-full mb-8"></div>
@@ -50,7 +50,7 @@ const About: React.FC = () => {
           </div>
           <div className="order-1 lg:order-2">
             <div className="rounded-[4rem] overflow-hidden shadow-2xl border-8 border-white hover:rotate-2 transition-transform duration-700">
-              <img src="building-1.avif" alt="Legacy" />
+              <img src="/images/building-1.avif" alt="Legacy" />
             </div>
           </div>
         </div>
@@ -71,13 +71,13 @@ const About: React.FC = () => {
                 name: "Shama Parveen",
                 role: "Founding Trustee",
                 bio: "A visionary who dedicated her life to making education accessible to every child in the community.",
-                img: "person-1.webp"
+                img: "/images/person-1.webp"
               },
               {
                 name: "Mr. Wasim",
                 role: "Academic Director",
                 bio: "Leading our academic excellence with a focus on modern pedagogy rooted in traditional values.",
-                img: "logo-1.png"
+                img: "/images/logo-1.png"
               }
             ].map((founder, idx) => (
               <div key={idx} className="calm-card p-10 flex flex-col md:flex-row gap-8 items-center md:items-start group transition-all duration-500 hover:shadow-xl">
