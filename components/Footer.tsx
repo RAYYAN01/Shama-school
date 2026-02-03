@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
                 <img src="/images/logo-1.png" alt="SVS Logo" className="w-full h-full object-contain" />
               </div>
               <div>
-                <h3 className="text-xl font-serif font-bold tracking-tight">SHAMA VIDYA Shala</h3>
+                <h3 className="text-xl font-serif font-bold tracking-tight">SHAMA VIDYA Shalaa</h3>
                 <p className="text-xs text-yellow-500 font-bold uppercase tracking-widest">Since 1968</p>
               </div>
             </div>
