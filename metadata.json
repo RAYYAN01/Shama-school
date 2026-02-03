@@ -1,0 +1,8 @@
+{
+  "name": "Shama Vidya Shalaa",
+  "description": "A modern, professional website for Shama Vidya Shalaa featuring AI animation, search-grounded assistant, and a dedicated AI lab for students.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
