@@ -1,6 +1,71 @@
 
 import React from 'react';
 
+type GrowthCardProps = {
+  title: string;
+  description: string;
+  image: string;
+};
+
+const GrowthCard: React.FC<GrowthCardProps> = ({ title, description, image }) => (
+  <div className="text-center group">
+    <div className="mb-8 rounded-[3rem] overflow-hidden aspect-[4/3] shadow-2xl relative">
+      <img src={image} alt={title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+      <div className="absolute inset-0 bg-gradient-to-t from-svs-purple/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-8">
+        <p className="text-xs font-bold tracking-widest uppercase">Explore More</p>
+      </div>
+    </div>
+    <h4 className="text-2xl font-serif font-bold mb-4">{title}</h4>
+    <p className="text-indigo-200/70 text-sm leading-relaxed font-light">{description}</p>
+  </div>
+);
+
+const HolisticGrowth: React.FC = () => {
+  const activities = [
+    {
+      title: 'Physical Education',
+      description: 'Regular yoga, PT sessions, team sports and annual sports days that promote fitness, teamwork, and discipline.',
+      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop'
+    },
+    {
+      title: 'Performing Arts',
+      description: 'Music, dance and drama activities that build confidence, creativity and public-speaking skills.',
+      image: 'https://images.unsplash.com/photo-1514525253344-46327392633b?q=80&w=1000&auto=format&fit=crop'
+    },
+    {
+      title: 'Science & Innovation',
+      description: 'Hands-on laboratory work, maker projects and guided innovation sessions to nurture curiosity and problem-solving.',
+      image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=1000&auto=format&fit=crop'
+    }
+  ];
+
+  return (
+    <section className="py-24 bg-white relative overflow-hidden">
+      <div className="absolute top-0 right-0 w-96 h-96 bg-indigo-50 rounded-full blur-3xl -mr-48 -mt-48 opacity-60"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-pink-50 rounded-full blur-3xl -ml-48 -mb-48 opacity-60"></div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-20">
+          <span className="inline-block px-4 py-1.5 bg-indigo-50 text-indigo-700 text-xs font-bold uppercase tracking-widest rounded-full mb-4">
+            Curriculum Beyond Books
+          </span>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-900 mb-6">Holistic Growth</h2>
+          <div className="w-24 h-1 bg-indigo-600 mx-auto mb-6 rounded-full"></div>
+          <p className="text-slate-500 text-xl font-light max-w-2xl mx-auto">
+            Co-curricular programs that cultivate character, resilience and practical life skills for the 21st century learner.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-20">
+          {activities.map((item, index) => (
+            <GrowthCard key={index} title={item.title} description={item.description} image={item.image} />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Academics: React.FC = () => {
   const programs = [
     {
@@ -101,36 +166,8 @@ const Academics: React.FC = () => {
         </div>
       </section>
 
-      {/* Beyond Academics - Dark Earth Tone */}
-      <section className="py-24 bg-svs-purple text-white rounded-t-[4rem] md:rounded-t-[6rem] relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-svs-green via-transparent to-transparent"></div>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6">Holistic Growth</h2>
-            <p className="text-indigo-200 text-xl font-light">Co-curricular activities that build character and life skills.</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {[
-              { img: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop', title: 'Physical Education', desc: 'Regular yoga, PT sessions, and annual sports days for physical wellbeing.' },
-              { img: 'https://images.unsplash.com/photo-1514525253344-46327392633b?q=80&w=1000&auto=format&fit=crop', title: 'Performing Arts', desc: 'Music, dance, and drama performances during school festivals and anniversaries.' },
-              { img: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=1000&auto=format&fit=crop', title: 'Science & Innovation', desc: 'State-of-the-art laboratory work and technological exploration for students.' }
-            ].map((item, idx) => (
-              <div key={idx} className="text-center group">
-                <div className="mb-8 rounded-[3rem] overflow-hidden aspect-[4/3] shadow-2xl relative">
-                  <img src={item.img} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-svs-purple/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end justify-center p-8">
-                     <p className="text-xs font-bold tracking-widest uppercase">Explore More</p>
-                  </div>
-                </div>
-                <h4 className="text-2xl font-serif font-bold mb-4">{item.title}</h4>
-                <p className="text-indigo-200/70 text-sm leading-relaxed font-light">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Holistic Growth - integrated component */}
+      <HolisticGrowth />
     </div>
   );
 };
