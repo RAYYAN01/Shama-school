@@ -15,8 +15,9 @@ const GrowthCard: React.FC<GrowthCardProps> = ({ title, description, image }) =>
         <p className="text-xs font-bold tracking-widest uppercase">Explore More</p>
       </div>
     </div>
-    <h4 className="text-2xl font-serif font-bold mb-4">{title}</h4>
-    <p className="text-indigo-200/70 text-sm leading-relaxed font-light">{description}</p>
+    <h4 className="text-2xl font-serif font-bold mb-2">{title}</h4>
+    <div className="w-12 h-1 bg-slate-800 mx-auto mb-4 rounded-full"></div>
+    <p className="text-slate-800 text-sm leading-relaxed font-light">{description}</p>
   </div>
 );
 
