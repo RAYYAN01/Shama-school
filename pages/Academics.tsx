@@ -25,17 +25,18 @@ const HolisticGrowth: React.FC = () => {
     {
       title: 'Physical Education',
       description: 'Regular yoga, PT sessions, team sports and annual sports days that promote fitness, teamwork, and discipline.',
-      image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1000&auto=format&fit=crop'
+      image: 'public/images/class-3.avif'
+
     },
     {
       title: 'Performing Arts',
       description: 'Music, dance and drama activities that build confidence, creativity and public-speaking skills.',
-      image: 'https://images.unsplash.com/photo-1514525253344-46327392633b?q=80&w=1000&auto=format&fit=crop'
+      image: 'public/images/class-2.jpeg'
     },
     {
       title: 'Science & Innovation',
       description: 'Hands-on laboratory work, maker projects and guided innovation sessions to nurture curiosity and problem-solving.',
-      image: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=1000&auto=format&fit=crop'
+      image: 'public/images/class-1.jpg'
     }
   ];
 
@@ -115,7 +116,7 @@ const Academics: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-center gap-20 mb-32">
             <div className="lg:w-1/2">
               <div className="relative">
-                <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?q=80&w=2070&auto=format&fit=crop" alt="Learning Approach" className="rounded-[3.5rem] shadow-2xl calm-shadow" />
+                <img src="public/images/class-1.jpg" alt="Learning Approach" className="rounded-[3.5rem] shadow-2xl calm-shadow" />
                 <div className="absolute -top-10 -left-10 w-32 h-32 bg-amber-100 rounded-full blur-3xl opacity-50"></div>
               </div>
             </div>
