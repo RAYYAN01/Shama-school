@@ -117,7 +117,7 @@ const Academics: React.FC = () => {
           <div className="flex flex-col lg:flex-row items-center gap-20 mb-32">
             <div className="lg:w-1/2">
               <div className="relative">
-                <img src='/images/building-1.avif' alt="Learning Approach" className="rounded-[3.5rem] shadow-2xl calm-shadow" />
+                <img src="/images/building-1.avif" alt="Learning Approach" className="rounded-[3.5rem] shadow-2xl calm-shadow" />
                 <div className="absolute -top-10 -left-10 w-32 h-32 bg-amber-100 rounded-full blur-3xl opacity-50"></div>
               </div>
             </div>
