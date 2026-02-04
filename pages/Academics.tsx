@@ -11,13 +11,13 @@ const Academics: React.FC = () => {
     },
     {
       level: 'Primary School (Grade 1-5)',
-      color: '#009640',
+      color: '#002396ea',
       description: 'Strong foundation in literacy, numeracy, and environmental studies.',
       highlights: ['Math & Science', 'Language Skills', 'Physical Education', 'Arts & Crafts']
     },
     {
       level: 'Middle School (Grade 6-8)',
-      color: '#f39200',
+      color: '#20162b',
       description: 'Encouraging independent thinking and deeper conceptual understanding.',
       highlights: ['Lab Sessions', 'ICT & Computers', 'Vernacular Languages', 'Modern Sciences']
     },
