@@ -36,7 +36,7 @@ const HolisticGrowth: React.FC = () => {
   {
     title: 'Science & Innovation',
     description: 'Hands-on laboratory work, maker projects and guided innovation sessions to nurture curiosity and problem-solving.',
-    image: '/images/class-1.jpg'
+    image: 'public/images/class-1.jpg'
   }
 ];
 
