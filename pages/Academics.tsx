@@ -23,23 +23,23 @@ const GrowthCard: React.FC<GrowthCardProps> = ({ title, description, image }) =>
 
 const HolisticGrowth: React.FC = () => {
   const activities = [
-    {
-      title: 'Physical Education',
-      description: 'Regular yoga, PT sessions, team sports and annual sports days that promote fitness, teamwork, and discipline.',
-      image: '<img src="/images/class-1.jpg" alt="Learning Approach" />>
+  {
+    title: 'Physical Education',
+    description: 'Regular yoga, PT sessions, team sports and annual sports days that promote fitness, teamwork, and discipline.',
+    image: '/images/class-3.avif'
+  },
+  {
+    title: 'Performing Arts',
+    description: 'Music, dance and drama activities that build confidence, creativity and public-speaking skills.',
+    image: '/images/class-2.jpeg'
+  },
+  {
+    title: 'Science & Innovation',
+    description: 'Hands-on laboratory work, maker projects and guided innovation sessions to nurture curiosity and problem-solving.',
+    image: '/images/class-1.jpg'
+  }
+];
 
-    },
-    {
-      title: 'Performing Arts',
-      description: 'Music, dance and drama activities that build confidence, creativity and public-speaking skills.',
-      image: 'public/images/class-2.jpeg'
-    },
-    {
-      title: 'Science & Innovation',
-      description: 'Hands-on laboratory work, maker projects and guided innovation sessions to nurture curiosity and problem-solving.',
-      image: 'public/images/class-1.jpg'
-    }
-  ];
 
   return (
     <section className="py-24 bg-white relative overflow-hidden">
