@@ -107,7 +107,7 @@ const Contact: React.FC = () => {
           <div className="space-y-6">
             {[
               { q: 'What is the best time to visit?', a: 'We welcome visitors between 9:00 AM and 12:00 PM on weekdays. Please call or WhatsApp us ahead of time to schedule a tour.' },
-              { q: 'Is there a school transport facility?', a: 'Yes, we provide transportation for students in the Okalipuram and surrounding areas. Routes can be confirmed at the administrative office.' },
+              { q: 'How can I schedule a campus tour?', a: 'You can schedule a tour by contacting us via WhatsApp at +91 94804 50512 or by emailing us at shamavidyashala@gmail.com.' },
               { q: 'What is the medium of instruction?', a: 'The primary medium of instruction is English, while also emphasizing proficiency in Kannada and Hindi.' }
             ].map((item, idx) => (
               <details key={idx} className="group bg-white rounded-[2rem] shadow-sm border border-amber-100 overflow-hidden">
