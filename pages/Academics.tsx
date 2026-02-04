@@ -26,7 +26,7 @@ const HolisticGrowth: React.FC = () => {
   {
     title: 'Physical Education',
     description: 'Regular yoga, PT sessions, team sports and annual sports days that promote fitness, teamwork, and discipline.',
-    image: '/images/class-4.avif'
+    image: 'public/images/class-3.jpeg'
   },
   {
     title: 'Performing Arts',
